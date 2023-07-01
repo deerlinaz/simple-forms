@@ -31,4 +31,11 @@ public class UsersService {
     public UsersModels authenticate(String login, String password){
         return usersRepository.findByLoginAndPassword(login, password).orElse(null);
     }
+
+//    public UsersModels checkpassword(String login){
+//        usersRepository.findByLogin(login);
+//        if(){
+//
+//        }
+//    }
 }
